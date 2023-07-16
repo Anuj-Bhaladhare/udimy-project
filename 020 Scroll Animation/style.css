@@ -37,13 +37,9 @@ h2 {
     border-radius: 10px;
     box-shadow: 1px, 1px, 5px, 1px, rgb(30, 30, 30);
     transform: translateX(700%);
-    transition: transform 0.4s ease;
+    transition: transform 1s ease;
 }
 
 .box.back {
     transform: translateX(0%);
-}
-
-.box:nth-of-type(even) {
-    transform: translateX(-700%);
 }
