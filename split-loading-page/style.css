@@ -1,0 +1,55 @@
+
+:root {
+    --left-color : rgba(87, 84, 236, 0.7);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    flex-direction: column;
+    overflow: hidden;
+    margin: 0;
+}
+
+.container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background: #333;
+}
+
+.split {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.split.left {
+    right: 0;
+    background-image: url("./Play\ Station\ 5.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.split.left::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: var(--left-color);
+}
+
+
+.split.right {
+    right: 0;
+    background-image: url("./Xbox\ Series.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
